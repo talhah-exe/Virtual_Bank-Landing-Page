@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: #131313;
+  padding: 1rem 8rem;
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+li.nav-item:nth-child(n) > a:nth-child(1) {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active {
+  color: #00bf85;
+}
+
+/*
+.nav-item:nth-child(n) > a:nth-child(1):hover,
+ .nav-item:nth-child(n) > a:nth-child(1):active{
+  color: #00bf85;
+}
+*/
+.btn {
+  background-color: #00bf85;
+}
+.btn:hover {
+  background-color: aqua;
+}
+
+.mid {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.mid video {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero {
+  position: relative;
+  color: #fff;
+}
+
+.about {
+  background: #000;
+}
+
+.about h6 {
+  color: #00bf75;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.about h2 {
+  color: #f7f5f4;
+  font-weight: 550px;
+  font-size: 2.7rem;
+}
+.about p {
+  color: #f7f5f4;
+  font-weight: 400px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.discovery h6 {
+  color: #00bf75;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.discovery h2 {
+  font-weight: 550px;
+  font-size: 2.7rem;
+}
+.discovery p {
+  font-weight: 400px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+.service {
+  background: #000;
+}
+.card {
+  background: #fff;
+}
+
+.service h2 {
+  font-weight: 550px;
+  font-size: 2.7rem;
+}
+
+.sign h6 {
+  color: #00bf75;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.sign h2 {
+  font-weight: 550px;
+  font-size: 2.7rem;
+}
+.sign p {
+  font-weight: 400px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  background: #000;
+}
+
+@media screen and (max-width: 998px) {
+    .navbar{
+        padding: 1rem;
+    }
+    #navbarSupportedContent > ul{
+        padding-left: 0.8rem;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 0.8rem 0;
+    }
+}
